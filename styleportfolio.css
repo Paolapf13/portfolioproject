@@ -1,0 +1,305 @@
+/*Código que se utiliza para agregar una tipografía nueva*/
+@font-face{
+    font-family:'TheBoldFont';
+    src: url('THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.ttf');
+}
+
+@font-face{
+    font-family:'Mangiola';
+    src: url('mangiola/Mangiola-Regular.ttf');
+}
+
+
+/*Intentos de animacion*/
+@keyframes showup{
+    0% {opacity:0;}
+    20% {opacity:.85;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes typing{
+    from{width:0;}
+    to{width:100%;}
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(1.25, 1.25);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+
+/*Menu de navegacion*/
+.topnav{
+    text-align: right;
+    background: #feca88;
+    color: white;
+    border: 45px;
+    font-size: 20px;
+    font-family: 'Mangiola';
+    padding: 25px;
+    position:sticky;
+    top:0;
+    
+}
+
+.topnav a{
+    color: black;
+    text-decoration: none;
+    padding-left:20px;
+    word-spacing:0;
+}
+
+
+.topmenu:hover {
+    font-weight:bolder;
+}
+
+#homeicon{
+    float:left;
+}
+
+/*Sección de Bienvenida entre otros ajustes generales*/
+
+/*Texto de Bienvenida*/
+#Hello h1{
+    font-size: 100px;
+    font-family:'TheBoldFont';
+    color: white;
+    text-align:center;
+   
+}
+
+#Hello{
+    font-size: 50px;
+    font-weight:bolder;
+    text-align:center;
+    background-color:#feca88;
+    align-content:center;
+    background-size:cover;
+    position:relative;
+    padding:125px;
+}
+
+.container{
+    padding: 125px;
+
+}
+
+img{ /*Creo que aqui se declaró en general el tamaño de todas las imagenes de la pagina*/
+    width:50px;
+}
+
+#salute{  /*Animacion de las letras blancas de bienvenida*/
+    overflow:hidden;
+    white-space:nowrap;
+    animation:zoom-in-zoom-out 2s 1;
+}
+
+#Hello h2 {
+    font-family:"Mangiola";
+    font-size: 45px;
+    text-decoration: bolder;
+    text-align: center;
+    overflow:hidden; /*Esto hace que el contenido no aparezca hasta que se aplique la animacion*/
+    animation:typing 3s steps(50) 1 normal both; /*animacion aplicada*/
+    animation-delay:3.5s;
+    white-space: nowrap; /*para que salga el texto en una sola linea*/
+    margin: 0 auto; /*Establecer el margen me ayudó a que la animación saliera del centro*/
+
+}
+
+#button1 {
+    background-color:white;
+    width: 250px;
+    font-size: 17px;
+    font-family:"TheBoldFont";
+    border-color:#feca88;
+    overflow:hidden;
+    animation:showup 3s both;
+    animation-delay:6s;
+}
+
+#button1 a{
+    color: #feca88;
+    text-decoration: none;
+}
+
+#button1:hover{
+    background-color:#f89f16 ;
+}
+
+#button1 a:hover{
+    color:white;
+}
+
+/*Titulos de las secciones*/
+.container h1{
+    font-family:"TheBoldFont";
+    font-size: 50px;
+    text-align: center;
+    color:#feca88;
+}
+
+/*Sección About Me*/
+
+#aboutme p{
+    font-family:"Franklin Gothic Book";
+    font-size: 25px;
+    text-align:justify;
+    overflow:hidden;
+    padding:25px;
+    
+}
+
+#aboutme img{
+    float: left;
+    margin-right: 20px;
+    
+}
+
+#button2 {
+    background-color:#feca88;
+    width: 100px;
+    font-size: 17px;
+    font-family:"TheBoldFont";
+    border-color:#feca88;
+    display:block;
+    margin:auto;
+}
+
+#button2 a{
+    color: black;
+    text-decoration: none;
+}
+
+#button2:hover{
+    background-color:#f89f16 ;
+}
+
+#button2 a:hover{
+    color:white;
+}
+
+p {
+    font-family:"Franklin Gothic Book"; 
+    font-size: 15px;
+}
+
+h3{
+    font-family:"Mangiola";
+    font-size: 45px;
+    font-weight:bolder;
+}
+
+#quote{
+    color:#f89f16;
+    font-style: italic;
+    text-align:center;
+}
+
+
+/*Sección Skills*/ 
+
+.all_skills{
+    text-align:center;
+    float:center;
+    padding:42px;
+}
+
+.skill{
+    padding:27px;
+}
+
+/*Sección Proyectos*/
+
+#Nuvo{
+    padding-top:30px;
+    float:center;
+    overflow:hidden;
+}
+
+#projects img{
+    border-radius: 90px;
+    width:312px;
+    float:left;
+    margin-left:150px;
+    margin-right: 45px;
+    margin-top:none;
+}
+
+ul{
+    font-family:"Franklin Gothic Book";
+    font-size:18px;
+}
+
+#Nuvo h4 {
+    color:#feca88;
+    font-weight: bolder;
+}
+
+#Nuvo h5{
+    font-family:"Franklin Gothic Book";
+    font-style:italic;
+}
+
+#buttonwebpage {
+    background-color:#feca88;
+    width: 200px;
+    font-size: 17px;
+    font-family:"TheBoldFont";
+    border-color:#feca88;
+    display:block;
+    margin:auto;
+}
+
+#buttonwebpage a{
+    color: black;
+    text-decoration: none;
+}
+
+#buttonwebpage:hover{
+    background-color:#f89f16 ;
+}
+
+#buttonwebpage a:hover{
+    color:white;
+}
+
+
+/*Sección de contacto*/ 
+
+#linkedin {
+    background-color:#feca88;
+    width: 300px;
+    font-size: 17px;
+    font-family:"TheBoldFont";
+    border-color:#feca88;
+    display:block;
+    margin:auto;
+}
+
+#linkedin a{
+    color: black;
+    text-decoration: none;
+}
+
+#linkedin:hover{
+    background-color:#f89f16 ;
+}
+
+#linkedin a:hover{
+    color:white;
+}
+
+#info{
+    padding:20px;
+}
+
